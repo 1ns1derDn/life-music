@@ -13,20 +13,20 @@ const nextConfig = {
           plugins: [
             {
               name: "preset-default",
-              removeViewBox: false,
-            },
-          ],
+              removeViewBox: false
+            }
+          ]
         },
-        titleProp: true,
+        titleProp: true
       },
-      test: /\.svg$/,
+      test: /\.svg$/
     });
 
     return config;
   },
   experimental: {
-    outputStandalone: true,
-  },
+    outputStandalone: true
+  }
 };
 
 module.exports = nextConfig;
