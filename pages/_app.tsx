@@ -8,7 +8,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/global-styles";
 
-import { theme } from "../styles/theme";
+import { defaultTheme } from "../theme";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page: any) => page);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
