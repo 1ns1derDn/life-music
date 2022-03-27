@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 
+import { Flex } from "../helpers/Flex";
+
 const Home: NextPage = () => {
-  return <h1>Hello life - Music</h1>;
+  return <Flex>Hello life - Music</Flex>;
 };
 
 export default Home;

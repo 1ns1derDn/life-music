@@ -1,3 +1,9 @@
+import {
+  ColorProps,
+  LayoutProps,
+  SpaceProps,
+  TypographyProps,
+} from "styled-system";
 export const defaultTheme = {
   breakpoints: ["450px", "600px", "960px", "1280px", "1440px", "1920px"],
 
@@ -25,3 +31,8 @@ export const defaultTheme = {
 };
 
 export type AppTheme = typeof defaultTheme;
+
+export type ThemeProps = ColorProps<AppTheme> &
+  LayoutProps<AppTheme> &
+  SpaceProps<AppTheme> &
+  TypographyProps<AppTheme>;
