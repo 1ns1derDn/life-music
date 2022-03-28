@@ -4,6 +4,10 @@ import { normalize } from "styled-normalize";
 export const GlobalStyle = createGlobalStyle`
   ${normalize};
 
+  body {
+    box-sizing: border-box;
+  }
+
   *,
   *::after,
   *::before {
@@ -61,4 +65,9 @@ export const GlobalStyle = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
   }  
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
 `;

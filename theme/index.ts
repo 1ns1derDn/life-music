@@ -4,6 +4,7 @@ import {
   SpaceProps,
   TypographyProps,
 } from "styled-system";
+
 export const defaultTheme = {
   breakpoints: ["450px", "600px", "960px", "1280px", "1440px", "1920px"],
 
@@ -25,8 +26,15 @@ export const defaultTheme = {
   },
 
   colors: {
-    white: "#fff",
-    black: "#000",
+    primary: "#ff1744",
+    secondery: "#ff1744",
+
+    focus: "#000",
+  },
+
+  text: {
+    primary: "#9ca8b0",
+    secondery: "#ffffff",
   },
 };
 
